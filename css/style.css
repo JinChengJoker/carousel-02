@@ -1,0 +1,24 @@
+.carousel {
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+.carousel > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform .3s;
+}
+.carousel > img.center {
+    transform: translateX(0);
+    z-index: 1;
+}
+.carousel > img.left {
+    transform: translateX(-100%);
+}
+.carousel > img.right {
+    transform: translateX(100%);
+}
