@@ -24,13 +24,13 @@ function getImg(index) {
 }
 
 function toLeft($img) {
-    return $img.removeClass('center').addClass('left')
+    return $img.removeClass('center right').addClass('left')
 }
 
 function toRight($img) {
-    return $img.removeClass('left').addClass('right')
+    return $img.removeClass('left center').addClass('right')
 }
 
 function toCenter($img) {
-    return $img.removeClass('right').addClass('center')
+    return $img.removeClass('right left').addClass('center')
 }
